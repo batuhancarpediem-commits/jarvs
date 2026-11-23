@@ -339,5 +339,5 @@ echo "MainActivity.kt yenilendi. GitHub'a gonderiliyor..."
 git add -A
 git commit -m "MainActivity duzeltme"
 git push
-echo ""
+echo "" 
 echo "BITTI. Actions sekmesinde yeni Build APK bitince APK indir."
