@@ -384,7 +384,8 @@ class GeminiClient(private val prefs: Prefs) {
             val start = maxOf(0, history.size - 12)
             for (i in start until history.size) {
                 val part = JSONObject().put("text", history[i].second)
-                contents.put(
+                contents.put
+                .put("generationConfig", JSONObject().put("thinkingConfig", JSONObject().put("thinkingLevel", "minimal")))
                     JSONObject()
                         .put("role", history[i].first)
                         .put("parts", JSONArray().put(part))
