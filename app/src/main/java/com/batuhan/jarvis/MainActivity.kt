@@ -163,13 +163,12 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                 }
             })
             applyVoice()
-        }
+        }if (ultron) { tts?.setPitch(0.85f); tts?.setSpeechRate(0.95f) }
+else { tts?.setPitch(1.0f); tts?.setSpeechRate(1.0f) }
     }
 
     private fun applyVoice() {
-        if (!ttsReady) return
-        if (ultron) { tts?.setPitch(0.55f); tts?.setSpeechRate(0.82f) }
-        else { tts?.setPitch(1.1f); tts?.setSpeechRate(1.0f) }
+        ya1.0f) }
     }
 
     private fun applyMode() {
