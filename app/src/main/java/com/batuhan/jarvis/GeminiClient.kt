@@ -74,6 +74,7 @@ class GeminiClient(private val prefs: Prefs) {
                 val part = JSONObject().put("text", history[i].second)
                 contents.put(
                     JSONObject()
+                    .put("tools", JSONArray().put(JSONObject().put("google_search", JSONObject())))
                         .put("role", history[i].first)
                         .put("parts", JSONArray().put(part))
                 )
